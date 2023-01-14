@@ -1,0 +1,136 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.dropbtn {
+        background-color: white;
+        color: white;
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        border: none;
+        text-decoration: none;
+        border-radius:8px 8px 8px 8px;
+        color: rgba(98, 98, 98,1);
+        display: inline-block;
+  }
+.dropbtnn {
+  background-color: rgb(239, 115, 78);
+  color: white;
+  width: 180px;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  text-decoration: none;
+  border-radius:8px 8px 8px 8px;
+ 
+}     
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 60px;  
+}
+.dropdown-content {
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.644);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:8px 8px 8px 8px; 
+  font-size: 15px;
+  font-family: cabin, sans-serif;
+  backdrop-filter: blur(10px);
+  border-width: 2px;
+  border-color:#f1f1f123
+}
+
+.dropdown-content a {
+  color: rgb(98, 98, 98);
+  padding: 15px 15px;
+  margin: 3px;
+  text-decoration: none;
+  display: block;
+  border-radius:8px 8px 8px 8px;   
+}
+
+.dropdown-content a:hover {background-color: rgba(211, 235, 250, 0.5);}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn{
+  background-color: rgba(239, 239, 239, 1.0);
+}
+.dropdown:hover .dropbtnn{
+  background-color: rgb(255, 159, 99);
+  
+}
+.tieu_de{
+  text-decoration: none;
+  color:black;
+  font-family:Cabin, sans-serif;
+  font-weight: bold;
+}
+
+
+</style>
+
+
+<!-- điều chỉnh màu ở chỗ chứa rgba -->
+<!-- Nếu cần thêm nút thì copy hết <div class="dropdown"> đến hết </div> tương ứng của nó -->
+<!-- Nếu muốn thêm lựa chọn để hover thì thêm thẻ <a> hhihi </a>, cắm link ở href="link" -->
+<!-- chỉnh độ to nhỏ của nút ở khu vực css(style) của .dropdown-content a; padding tùy chỉnh(tùy chỉnh chiều cao) -->
+<!-- padding x y z t tương ứng trên dưới trái phải -->
+
+
+<nav>
+  <div class="thanhbar">
+    <div class="chuathanhbar">
+      <div class="dropdown">
+          <button class="dropbtn"><a class="tieu_de" href="http://www.uplus.com.vn/" target="_blank" style="color:rgba(81, 197, 223, 1.0) ;"><b>TRANG CHỦ</b></a></button>
+        <div class="dropdown-content">
+          <a href="#">Câu chuyện</a>
+          <a href="#">Điểm Khác biệt</a>
+          <a href="https://tuyendung.uplus.com.vn/">Tuyển dụng</a>
+        </div>
+      </div>
+    <div class="dropdown">
+      <button class="dropbtn"><a class="tieu_de" href="http://www.uplus.com.vn/danh-gia" target="_blank"><b>ĐÁNH GIÁ</b></a></button>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" style="width:160px"><a class="tieu_de" href="http://www.uplus.com.vn/phuong-phap-offline" target="_blank"><b>PHƯƠNG PHÁP</b></a></button>
+      <div class="dropdown-content" style="margin-left:-30px; width:220px">
+        <a href="#">Phương pháp Track and Change</a>
+        <a href="#">Hệ sinh thái công nghệ</a>
+        <a href="#">Học viên là số 1</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><a class="tieu_de" href="http://www.uplus.com.vn/khoa-hoc" target="_blank"><b>KHÓA HỌC</b></a></button>
+      <div class="dropdown-content" style="margin-left:-45px;width:220px">
+        <a href="http://www.uplus.com.vn/khoa-hoc">Basic IELTS (đầu ra 5.5 +)</a>
+        <a href="http://www.uplus.com.vn/danh-gia">Advanced IELTS (đầu ra 6.5+)</a>
+        <a href="http://www.uplus.com.vn/phuong-phap-offline">Phương Pháp</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><a class="tieu_de" href="https://blog.uplus.com.vn/" target="_blank"><b>BLOG</b></a></button>
+      <div class="dropdown-content" style="margin-left:-20px">
+        <a href="http://www.uplus.com.vn/khoa-hoc">Khóa Học</a>
+        <a href="http://www.uplus.com.vn/danh-gia">Đánh Giá</a>
+        <a href="http://www.uplus.com.vn/phuong-phap-offline">Phương Pháp</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><a class="tieu_de" href="https://blog.uplus.com.vn/" target="_blank"><b>LIÊN HỆ</b></a></button>
+      <div class="dropdown-content" style="margin-left:-20px">
+        <a href="https://zalo.me/0982966824">Zalo</a>
+        <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F221815871679918%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0">Messenger</a>
+        <a href="https://www.apple.com/sg/iphone/">Điện Thoại</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtnn"><a class="tieu_de" href="https://blog.uplus.com.vn/" target="_blank"><b>ĐỂ LẠI THÔNG TIN</b></a></button>
+
+    </div>
+  </div>
+  </div>
+</nav>
